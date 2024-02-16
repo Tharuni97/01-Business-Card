@@ -24,6 +24,7 @@
             box-shadow: 0 4px 8px;
             border-radius: 10px;
             transition: transform 03s ease-in-out;
+            position: relative;
         }    
         .profile-image {
             width: 100%;
@@ -39,7 +40,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 15px;
+            /* padding: 15px; */
         }
 
         .name {
@@ -72,6 +73,34 @@
             transform: scale(1.05);
             border: 4px solid rgb(31, 30, 30);
         }
+        .skill-card {
+            top: 48px;
+            position: absolute;
+            background:rgba(255, 255, 255, 0.3);
+            width: 100%;
+            backdrop-filter: blur(40px);
+            height: 0%;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+
+            
+        }
+        .skill-title{
+            margin-left: 30px;
+            font-size: 28px;
+            margin-top: 70px;
+            font-weight: bold;
+        }
+        .skill-card ul{
+            margin-left: 30px;
+        }
+        .skill-card li{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .Business-card:hover.skill-card{
+            height: 100%;
+        }
     </style>
   </head>
   <body>
@@ -94,6 +123,21 @@
                 <a href="">Twitter</a>
                 <a href="">github</a>
             </div>
+            <div class="skill-card">
+              <div class="skill-title">My Skills</div>
+              <ul>
+                  <li>
+                      html
+                  </li>
+                  <li>
+                      css
+                  </li>                        
+
+                  <li>
+                      java
+                  </li>
+              </ul>
+          </div>
     </div>
 
   </body>
